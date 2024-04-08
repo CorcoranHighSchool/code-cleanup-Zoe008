@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MoveLeft : MonoBehaviour
 {
@@ -10,6 +8,8 @@ public class MoveLeft : MonoBehaviour
     private PlayerController playerControllerScript;
     // Left bounds
     private float leftBound = -15.0f;
+    private const string player = "player"
+    private const string obstacle = "obstacle"
     // Start is called before the first frame update
     void Start()
     {

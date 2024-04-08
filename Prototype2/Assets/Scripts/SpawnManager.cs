@@ -22,6 +22,8 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
     }
 
+    ///change this string to match the name of the following method 
+    private const string spawnAnimalsMethod = "SpawnRandomAnimal"
     //Method to spawn animals
     private void SpawnRandomAnimal()
     {
