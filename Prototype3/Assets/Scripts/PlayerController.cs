@@ -1,17 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     //The player's Rigidbody
-    private Rigidbody playerRb;
+    [serializedFeild] public Rigidbody playerRb;
     //Jump force
-    private float jumpForce = 15.0f;
+    [serializedFeild] public float jumpForce = 15.0f;
     //Gravity Modifier
-    public float gravityModifier;
+    [serializedFeild] private float gravityModifier;
     //Are we on the ground?
-    private bool isOnGround = true;
+    [serializedFeild] public bool isOnGround = true;
     //Is the Game Over
     public bool gameOver = false;
 
@@ -19,16 +17,16 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnim;
 
     //ParticleSystem explosion
-    public ParticleSystem explositionParticle;
+    [serializedFeild]public ParticleSystem explositionParticle;
     //ParticleSystem dirt
-    public ParticleSystem dirtParticle;
+    [serializedFeild] private ParticleSystem dirtParticle;
 
     //Jump sound
-    public AudioClip jumpSound;
+    [serializedFeild] private AudioClip jumpSound;
     //Crash sound
-    public AudioClip crashSound;
+    [serializedFeild] private AudioClip crashSound;
     //Player Audio
-    public AudioSource playerAudio;
+    [serializedFeild]private AudioSource playerAudio;
 
     // Start is called before the first frame update
     void Start()
